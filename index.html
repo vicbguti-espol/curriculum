@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+        <img src="https://aulavirtual.espol.edu.ec/images/thumbnails/7260572/5dvmFQ9yHSfIUB4iDStlFDjM9xJ2RBs7Gxxa5E5F" alt="Foto de perfil" class="header-image">
         <h1>Victor Borbor</h1>
         <nav>
             <ul>
@@ -17,29 +18,143 @@
                 <li><a href="#educacion">Educación</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#referencias">Referencias</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="perfil">
             <h2>Perfil</h2>
-            <!-- Información sobre el perfil profesional -->
+            <p>
+                Estudiante de Ingeniería en Ciencias de la Computación en ESPOL con experiencia en ciencia de datos, machine learning, desarrollo front-end y automatización. 
+                Puedes visitar mi sitio web en 
+                <a href="https://vicbguti-espol.github.io/vicbguti-espol/" target="_blank" rel="noopener">https://vicbguti-espol.github.io/vicbguti-espol/</a>.
+            </p>
         </section>
         <section id="experiencia">
             <h2>Experiencia</h2>
-            <!-- Detalles de experiencia laboral -->
+            <ul>
+                <li><strong>Big Data Time Series Machine Learning Researcher</strong> - Decanato de Investigación ESPOL (May 2024 - Feb 2025)</li>
+                <li><strong>Front-End Developer</strong> - Subsecretaria de Puertos y Transporte Marítimo y Fluvial (Sep 2024 - Nov 2024)</li>
+                <li><strong>Automatización de Procesos con Selenium</strong> (Aug 2024 - Sep 2024)</li>
+            </ul>
         </section>
         <section id="educacion">
             <h2>Educación</h2>
-            <!-- Información educativa -->
+            <p>Ingeniería en Ciencias de la Computación - Escuela Superior Politécnica del Litoral (ESPOL)</p>
         </section>
         <section id="habilidades">
-            <h2>Habilidades</h2>
-            <!-- Lista de habilidades -->
+            <h2>Habilidades Técnicas</h2>
+            <ul>
+                <li>Lenguajes: JavaScript, TypeScript, Python</li>
+                <li>Frameworks y Librerías: Angular, Selenium, Primeng</li>
+                <li>Control de Versiones: Git, GitHub</li>
+                <li>Ciencia de Datos y Machine Learning: Pandas, Numpy, Pytorch</li>
+            </ul>
+        </section>
+        <section id="resumen">
+            <h2>Resumen de Experiencia y Educación</h2>
+            <ol>
+                <li>Graduado de ESPOL en Ciencias de la Computación</li>
+                <li>Investigador en Machine Learning y Big Data</li>
+                <li>Desarrollador Front-End y Automatizador de Procesos</li>
+            </ol>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Puesto/Grado</th>
+                    <th>Institución</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>Investigador ML</td>
+                    <td>Decanato de Investigación ESPOL</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>Front-End Developer</td>
+                    <td>Subsecretaría de Puertos y Transporte Marítimo y Fluvial</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>Ingeniero en Computación</td>
+                    <td>ESPOL</td>
+                </tr>
+            </table>
         </section>
         <section id="contacto">
             <h2>Contacto</h2>
-            <!-- Información de contacto -->
+            <p>Teléfono: +593 959039831</p>
+            <p>Email: <a href="mailto:vborborgutierrez@gmail.com">vborborgutierrez@gmail.com</a></p>
+            <!-- Formulario de contacto -->
+            <form action="#" method="post">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="motivo">Motivo de contacto:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="trabajo">Oportunidad laboral</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <fieldset>
+                    <legend>¿Cómo prefieres ser contactado?</legend>
+                    <input type="radio" id="contacto-email" name="preferencia_contacto" value="email" required>
+                    <label for="contacto-email">Email</label>
+                    <input type="radio" id="contacto-telefono" name="preferencia_contacto" value="telefono" required>
+                    <label for="contacto-telefono">Teléfono</label>
+                </fieldset>
+
+                <label for="intereses">Áreas de interés:</label>
+                <input type="checkbox" id="interes-desarrollo" name="intereses" value="desarrollo" required>
+                <label for="interes-desarrollo">Desarrollo</label>
+                <input type="checkbox" id="interes-diseno" name="intereses" value="diseno" required>
+                <label for="interes-diseno">Diseño</label>
+                <input type="checkbox" id="interes-gestion" name="intereses" value="gestion" required>
+                <label for="interes-gestion">Gestión</label>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <!-- Mapa de Google Maps -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.6678997556812!2d-79.96772873043747!3d-2.1479347999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13c1b2e6e4b1%3A0x8e2e1b7b6e6e1b7b!2sEscuela%20Superior%20Politécnica%20del%20Litoral!5e0!3m2!1ses!2sec!4v1716123456789!5m2!1ses!2sec" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <!-- Video de YouTube -->
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/fz6ROb-NZeA" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </section>
+        <section id="referencias">
+            <h2>Referencias</h2>
+            <article>
+                <blockquote>"Victor es un excelente compañero de equipo. Su compromiso y habilidad para resolver problemas hacen que trabajar con él sea siempre una experiencia enriquecedora."</blockquote>
+                <p><strong>Diego Araujo</strong> - Compañero de trabajo en equipo</p>
+            </article>
+            <article>
+                <blockquote>"Siempre busca la mejor solución para los desafíos tecnológicos. Su capacidad analítica y colaboración han sido clave en nuestros proyectos."</blockquote>
+                <p><strong>Michael Poveda</strong> - Compañero de trabajo en equipo</p>
+            </article>
+            <article>
+                <blockquote>"Gran desarrollador y colaborador en equipo. Victor aporta ideas innovadoras y siempre está dispuesto a ayudar a sus colegas."</blockquote>
+                <p><strong>Alex Otero</strong> - Compañero de trabajo en equipo</p>
+            </article>
         </section>
     </main>
     <footer>
