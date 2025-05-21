@@ -1,0 +1,43 @@
+/* Aplica la fuente a todos los elementos */
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Título principal centrado y en negrita */
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Imagen de perfil con id photo */
+#photo {
+    width: 8vw;
+    height: auto;
+}
+
+/* Subtítulos h2 */
+.subtitle {
+    color: rgb(151 156 165 / 0.89);
+    text-transform: uppercase;
+}
+
+/* <p> dentro de <footer>: alineado a la derecha y en itálica */
+footer p {
+    text-align: right;
+    font-style: italic;
+}
+
+/* <ul> hija inmediata de <nav>: sin viñetas */
+nav > ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Modelo de caja para las secciones */
+section {
+    border: 0.2pt solid #cedddd;
+    margin: 4px 2px 8px 2px; /* superior, derecha, inferior, izquierda */
+    padding: 1.5% 0.8%;
+    margin-bottom: 1.2rem;
+}
