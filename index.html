@@ -5,14 +5,22 @@
     <meta name="keywords" content="CV, Currículum, Victor Borbor, Experiencia, Educación">
     <meta name="description" content="Currículum Vitae de Victor Borbor. Experiencia profesional, educación y habilidades.">
     <meta name="author" content="Victor Borbor">
-    <title>Currículum Vitae de Victor Borbor</title>
-    <link href="https://fonts.googleapis.com/css?family=Orbitron&effect=3d" rel="stylesheet">
+    <title>Víctor Borbor</title>
+    
+    <!-- Add favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='hsl(140, 50%, 35%)'/><path d='M30 25L50 75L70 25' stroke='white' fill='none' stroke-width='9' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+    
+    <!-- Update Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
     <header class="header-minimal">
         <div class="header-content">
-            <h1 class="nombre-principal">Victor Borbor</h1>
+            <h1 class="nombre-principal">Víctor Borbor</h1>
             <nav class="navbar-minimal" id="navbar">
                 <ul>
                     <li><a href="#perfil" class="nav-link active">Perfil</a></li>
@@ -31,13 +39,13 @@
     <main>
         <section id="perfil">
             <div class="perfil-header-minimal">
-                <img id="photo" src="https://aulavirtual.espol.edu.ec/images/thumbnails/7260572/5dvmFQ9yHSfIUB4iDStlFDjM9xJ2RBs7Gxxa5E5F" alt="Foto de perfil" class="perfil-foto-circular">
+                <img id="photo" src="assets/images/perfil.jpg" alt="Foto de perfil" class="perfil-foto-circular">
                 <div>
                     <h2 class="subtitle">Perfil</h2>
                     <p>
-                        Estudiante de Ingeniería en Ciencias de la Computación en ESPOL con experiencia en ciencia de datos, machine learning, desarrollo front-end y automatización.
+                        Estudiante de Ingeniería en Ciencias de la Computación en ESPOL con experiencia en análisis de datos, machine learning, desarrollo front-end y automatización.
                     </p>
-                    <a href="https://vicbguti-espol.github.io/vicbguti-espol/" target="_blank" rel="noopener" class="btn-cta">Visita mi sitio web</a>
+                    <a href="https://vicbguti-espol.github.io/vicbguti-espol/" target="_blank" rel="noopener" class="btn-cta">Explora mis proyectos en GitHub</a>
                 </div>
             </div>
         </section>
@@ -71,33 +79,39 @@
         </section>
         <section id="resumen">
             <h2 class="subtitle">Resumen de Experiencia y Educación</h2>
-            <ol>
-                <li>Graduado de ESPOL en Ciencias de la Computación</li>
-                <li>Investigador en Machine Learning y Big Data</li>
-                <li>Desarrollador Front-End y Automatizador de Procesos</li>
+            <ol class="resumen-list">
+                <li>Experiencia sólida en <strong>Análisis de Datos</strong> y <strong>Machine Learning</strong>.</li>
+                <li>Desarrollo robusto en <strong>Front-End</strong> y <strong>Automatización de Procesos</strong>.</li>
+                <li>Habilidad comprobada en la investigación y aplicación de soluciones innovadoras.</li>
             </ol>
-            <table>
-                <tr>
-                    <th></th>
-                    <th>Puesto/Grado</th>
-                    <th>Institución</th>
-                </tr>
-                <tr>
-                    <th>1</th>
-                    <td>Investigador ML</td>
-                    <td>Decanato de Investigación ESPOL</td>
-                </tr>
-                <tr>
-                    <th>2</th>
-                    <td>Front-End Developer</td>
-                    <td>Subsecretaría de Puertos y Transporte Marítimo y Fluvial</td>
-                </tr>
-                <tr>
-                    <th>3</th>
-                    <td>Ingeniero en Computación</td>
-                    <td>ESPOL</td>
-                </tr>
-            </table>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rol/Grado</th>
+                            <th>Institución/Empresa</th>
+                            <th>Período Clave</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Inv. ML</td>
+                            <td>Decanato Investigación ESPOL</td>
+                            <td>May 2024 - Feb 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Front-End Dev</td>
+                            <td>Subsecretaría Pto. Marítimo</td>
+                            <td>Sep 2024 - Nov 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Ing. Computación</td>
+                            <td>ESPOL</td>
+                            <td>2022 - 2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
         <section id="contacto">
             <h2 class="subtitle">Contacto</h2>
@@ -113,60 +127,74 @@
                         <a href="mailto:vborborgutierrez@gmail.com">vborborgutierrez@gmail.com</a>
                     </p>
                     <div class="social-links">
-                        <a href="https://github.com/vicbguti-espol" target="_blank" title="GitHub">
+                        <a href="https://github.com/vicbguti-espol" target="_blank" class="social-link">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="icon-social">
+                            <span>GitHub</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/victorborbor/" target="_blank" title="LinkedIn">
+                        <a href="https://www.linkedin.com/in/vicbguti/" target="_blank" class="social-link">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="icon-social">
+                            <span>LinkedIn</span>
                         </a>
                     </div>
                 </div>
                 <form class="contacto-form" action="#" method="post">
-                    <label for="nombre">Nombre completo:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
 
-                    <label for="motivo">Motivo de contacto:</label>
-                    <select id="motivo" name="motivo" required>
-                        <option value="">Seleccione una opción</option>
-                        <option value="consulta">Consulta</option>
-                        <option value="trabajo">Oportunidad laboral</option>
-                        <option value="otro">Otro</option>
-                    </select>
+                    <div class="form-group">
+                        <label for="motivo">Motivo de contacto</label>
+                        <select id="motivo" name="motivo" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="consulta">Consulta</option>
+                            <option value="trabajo">Oportunidad laboral</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
 
                     <fieldset>
                         <legend>¿Cómo prefieres ser contactado?</legend>
-                        <label><input type="radio" name="preferencia_contacto" value="email" required> Email</label>
-                        <label><input type="radio" name="preferencia_contacto" value="telefono" required> Teléfono</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="preferencia_contacto" value="email" required> Email</label>
+                            <label><input type="radio" name="preferencia_contacto" value="telefono" required> Teléfono</label>
+                        </div>
                     </fieldset>
 
                     <fieldset>
-                        <legend>Áreas de interés:</legend>
-                        <label><input type="checkbox" name="intereses" value="desarrollo" required> Desarrollo</label>
-                        <label><input type="checkbox" name="intereses" value="diseno" required> Diseño</label>
-                        <label><input type="checkbox" name="intereses" value="gestion" required> Gestión</label>
+                        <legend>Áreas de interés</legend>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="intereses" value="desarrollo"> Desarrollo</label>
+                            <label><input type="checkbox" name="intereses" value="diseno"> Diseño</label>
+                            <label><input type="checkbox" name="intereses" value="gestion"> Gestión</label>
+                        </div>
                     </fieldset>
 
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
 
                     <button type="submit" class="btn-cta">Enviar</button>
                 </form>
             </div>
             <div class="contacto-extra">
                 <div class="contacto-mapa">
-                    <h3>Ubicación: ESPOL</h3>
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.6678997556812!2d-79.96772873043747!3d-2.1479347999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13c1b2e6e4b1%3A0x8e2e1b7b6e6e1b7b!2sEscuela%20Superior%20Politécnica%20del%20Litoral!5e0!3m2!1ses!2sec!4v1716123456789!5m2!1ses!2sec" 
-                        width="100%" 
-                        height="220" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                    <h3>Sede de Estudios ESPOL</h3>
+                    <div class="mapa-responsive">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.6678997556812!2d-79.96772873043747!3d-2.1479347999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13c1b2e6e4b1%3A0x8e2e1b7b6e6e1b7b!2sEscuela%20Superior%20Politécnica%20del%20Litoral!5e0!3m2!1ses!2sec!4v1716123456789!5m2!1ses!2sec" 
+                            width="100%" 
+                            height="220" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
                 </div>
                 <div class="contacto-video">
-                    <h3>Mi Explicación: Redes Neuronales Lineales para Regresión Lineal</h3>
+                    <h3>Profundizando en Redes Neuronales Lineales</h3>
                     <div class="video-responsive">
                         <iframe 
                             src="https://www.youtube.com/embed/fz6ROb-NZeA" 
@@ -181,28 +209,59 @@
         </section>
         <section id="referencias">
             <h2 class="subtitle">Referencias</h2>
-            <article>
-                <blockquote>"Victor es un excelente compañero de equipo. Su compromiso y habilidad para resolver problemas hacen que trabajar con él sea siempre una experiencia enriquecedora."</blockquote>
-                <p><strong>Diego Araujo</strong> - Compañero de trabajo en equipo</p>
-            </article>
-            <article>
-                <blockquote>"Siempre busca la mejor solución para los desafíos tecnológicos. Su capacidad analítica y colaboración han sido clave en nuestros proyectos."</blockquote>
-                <p><strong>Michael Poveda</strong> - Compañero de trabajo en equipo</p>
-            </article>
-            <article>
-                <blockquote>"Gran desarrollador y colaborador en equipo. Victor aporta ideas innovadoras y siempre está dispuesto a ayudar a sus colegas."</blockquote>
-                <p><strong>Alex Otero</strong> - Compañero de trabajo en equipo</p>
-            </article>
+            <div class="referencias-grid">
+                <article class="referencia-card">
+                    <blockquote>"Victor es un excelente compañero de equipo. Su compromiso y habilidad para resolver problemas hacen que trabajar con él sea siempre una experiencia enriquecedora."</blockquote>
+                    <p><strong>Diego Araujo</strong> - Compañero de trabajo en equipo</p>
+                </article>
+                <article class="referencia-card">
+                    <blockquote>"Siempre busca la mejor solución para los desafíos tecnológicos. Su capacidad analítica y colaboración han sido clave en nuestros proyectos."</blockquote>
+                    <p><strong>Michael Poveda</strong> - Compañero de trabajo en equipo</p>
+                </article>
+                <article class="referencia-card">
+                    <blockquote>"Gran desarrollador y colaborador en equipo. Victor aporta ideas innovadoras y siempre está dispuesto a ayudar a sus colegas."</blockquote>
+                    <p><strong>Alex Otero</strong> - Compañero de trabajo en equipo</p>
+                </article>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Victor Borbor</p>
+        <p>&copy; 2025 Víctor Borbor</p>
     </footer>
     <script>
 document.getElementById('menu-toggle').addEventListener('click', function() {
     const ul = document.querySelector('.navbar-minimal ul');
     ul.classList.toggle('open');
 });
+
+// Update active navigation link based on scroll position
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav-link');
+
+function updateActiveLink() {
+    let current = '';
+    const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        const offsetTop = rect.top + window.scrollY;
+        const offsetBottom = offsetTop + rect.height;
+        
+        if (scrollPosition >= offsetTop && scrollPosition <= offsetBottom) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').substring(1) === current) {
+            link.classList.add('active');
+        }
+    });
+}
+
+window.addEventListener('scroll', updateActiveLink);
+window.addEventListener('load', updateActiveLink);
 </script>
 </body>
 </html>
